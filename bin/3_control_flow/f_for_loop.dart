@@ -1,6 +1,7 @@
 void main() {
   forLoop();
   forLoopWithoutIndex();
+  forEach();
 }
 
 void forLoop() {
@@ -14,4 +15,9 @@ void forLoopWithoutIndex() {
   for (var pet in pets) {
     print(pet);
   }
+}
+
+void forEach() {
+  List<String> pets = ['Abe', 'Buck', 'Yeti'];
+  pets.forEach((pet) => print(pet));
 }
