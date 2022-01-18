@@ -1,6 +1,7 @@
 void main() {
   addNums1([1, 2, 3, 4, 5]);
   addNums2([1, 2, 3, 4, 5]);
+  addNums3([1, 2, 3, 4, 5]);
 }
 
 void addNums1(List<int> nums) {
@@ -25,4 +26,10 @@ int addNumbers(List<int> nums) {
     i++;
   }
   return sum;
+}
+
+void addNums3(List<int> nums) {
+  int sum = 0;
+  nums.forEach((number) => sum += number);
+  print(sum);
 }
