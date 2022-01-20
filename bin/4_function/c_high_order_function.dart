@@ -3,6 +3,7 @@ void main() {
   addNums2([1, 2, 3, 4, 5]);
   addNums3([1, 2, 3, 4, 5]);
   addNums4([1, 2, 3, 4, 5]);
+  mapSample();
 }
 
 void addNums1(List<int> nums) {
@@ -37,4 +38,10 @@ void addNums3(List<int> nums) {
 
 void addNums4(List<int> nums) {
   print(nums.reduce((v, e) => v + e));
+}
+
+void mapSample() {
+  List<int> smallNums = [1, 2, 3];
+  Iterable<int> biggerNums = smallNums.map((n) => n * 2).toList();
+  print('$smallNums -> $biggerNums');
 }
